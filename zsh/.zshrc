@@ -10,7 +10,8 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 alias ll='ls -al'
-
+alias la='ls -alh'
+alias lh='ls -lh'
 
 export NVM_DIR="$HOME/.nvm"
 source /usr/share/nvm/nvm.sh
