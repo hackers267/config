@@ -29,9 +29,9 @@ window:
   # Number of lines/columns (not pixels) in the terminal. The number of columns
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+  dimensions:
+    columns: 120
+    lines: 30
 
   # Window position (changes require restart)
   #
@@ -106,7 +106,7 @@ font:
 #   Normal (roman) font face
   normal:
     #Font family
-    
+
     #Default:
     #   - (macOS) Menlo
     #	-  JetBrains Mono
@@ -151,7 +151,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -177,11 +177,11 @@ font:
 #draw_bold_text_with_bright_colors: false
 tabspace: 4
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
-  #primary:
+  primary:
   #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+    foreground: '#eeeeec'
 
     # Bright and dim foreground colors
     #
@@ -250,26 +250,25 @@ tabspace: 4
   #  background: CellForeground
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
-
+  normal:
+    black: '0x2e3436'
+    red: '0xcc0000'
+    green: '0x73d216'
+    yellow: '0xedd400'
+    blue: '0x3465a4'
+    magenta: '0x75507b'
+    cyan: '0x06989a'
+    white: '0xd3d7cf'
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+  bright:
+    black:   '0x2e3436'
+    red:     '0xef2929'
+    green:   '0x8ae234'
+    yellow:  '0xfce94f'
+    blue:    '0x729fcf'
+    magenta: '0xad7fa8'
+    cyan:    '0x34e2e2'
+    white:   '0xeeeeec'
 
   # Dim colors
   #
@@ -390,7 +389,7 @@ cursor:
   #thickness: 0.15
 
 # Live config reload (changes require restart)
-#live_config_reload: true
+live_config_reload: true
 
 # Shell
 #
