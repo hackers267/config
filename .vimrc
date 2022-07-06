@@ -1,6 +1,5 @@
 set nu
 set hlsearch
-set nu
 set nocompatible
 syntax on
 set showmode
